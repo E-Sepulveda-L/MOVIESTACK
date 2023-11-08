@@ -23,7 +23,7 @@ body{
     --third: #ddd9ff;
     --fourth: #ffffff88;
     --main-text: #fff;
-    --card: #242f319a;
+    --card: #242f31bd;
     --background: #ebd6ff70;
 }
 /* ___________________________ home styles ___________________________ */
@@ -169,7 +169,6 @@ strong{
     overflow: hidden;
 }
 .phone-home-img{
-    margin: 10% auto;
     position: absolute;
     overflow: hidden;
 }
@@ -209,6 +208,7 @@ strong{
 }
 .card-carousel-home{
     width: 25rem;
+    min-width: 10rem;
     height: 15rem;
     margin: 0 .5rem;
     display: flex;
@@ -319,7 +319,212 @@ strong{
 .extra-links:hover{
     transform: scale(1.04);
 }
-/* ___________________________ @media___________________________ */
+/* ___________________________ movies content___________________________ */
+.main-movies{
+    width: 100%;
+    height: 80vh;
+    padding: 1px 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/3059.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-movies{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+}
+.nav-movies{
+    padding: 1px;
+}
+.main-movies .header-movies .nav-movies ul{
+    padding: 1px;
+    display: flex;
+    gap: 1rem;
+}
+.main-movies .header-movies .nav-movies ul li{
+    padding: .5rem .2rem;
+}
+.main-movies .header-movies .nav-movies ul li a{
+    padding: .5rem .8rem;
+    font-weight: 700;
+    text-shadow: 0 0 2px #000000;
+    border-radius: 5px;
+    color: var(--main-text);
+    transition: calc(.6s);
+}
+.main-movies .header-movies .nav-movies ul li a:hover{
+    background-color: var(--card);
+}
+.main-movies-data{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.title-main-movies{
+    margin: 1rem 0;
+    font-size: clamp(2rem, 2vw ,4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--main-text);
+    text-shadow: 0 0 5px var(--first);
+}
+.categories-movies{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.movies-content{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.setion-movies{
+    width: 100%;
+    padding: .2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    gap: .5rem;
+}
+.category-title{
+    width: 100%;
+    padding: .5rem 2rem;
+    font-weight: 700;
+    color: var(--third);
+    background-color: var(--first);
+}
+.section-movies-container{
+    width: 100%;
+    overflow-x: auto;
+}
+.scroll-movies{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.image-section-movies{
+    width: 12rem;
+    height: 15rem;
+    min-width: 10rem;
+    padding: 1px;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-movie{
+
+}
+.description-movie{
+    font-size: clamp(.01rem, .5rem ,10rem);
+    font-weight: 500;
+    padding: .5rem;
+    letter-spacing: .5px;
+    border-radius: 5px;
+    color: var(--main-text);
+    background-color: var(--card);
+    transition: calc(.6s);
+}
+.image-section-movies:hover .description-movie{
+    font-size: 1rem;
+}
+/* ___________________________ my list images ___________________________ */
+.mls-1{
+    background-image: url(https://framerusercontent.com/images/hmp9tMkcdNX4nSMhBGB9Ujf7EA.jpg?scale-down-to=512);
+}
+.mls-2{
+    background-image: url(https://framerusercontent.com/images/ujIdztfVUXnmR2UNm3HxIkBqn8c.jpg?scale-down-to=512);
+}
+.mls-3{
+    background-image: url(https://framerusercontent.com/images/8vJCIz7GidYYi2FnfdlgUlx4k.jpg?scale-down-to=512);
+}
+.mls-4{
+    background-image: url(https://framerusercontent.com/images/bNBaDT63E4jg3XMPOt0CIwDdA.jpg?scale-down-to=512);
+}
+.mls-5{
+    background-image: url(https://framerusercontent.com/images/N7kEvjKpeFrO7gGLavBLb3n4II.jpg?scale-down-to=512);
+}
+.mls-6{
+    background-image: url(https://framerusercontent.com/images/WJMMwzrUFqabghIYxEejBtGduQ.jpg?scale-down-to=512);
+}
+.mls-7{
+    background-image: url(https://framerusercontent.com/images/UnU39UIxBtjyq5KJ5KLEHr8dH0.jpg?scale-down-to=512);
+}
+.mls-8{
+    background-image: url(https://framerusercontent.com/images/aaHQRPlG9kgQzzwDgjmXDCJwGXs.jpg?scale-down-to=512);
+}
+.mls-9{
+    background-image: url(https://framerusercontent.com/images/t0XxtSO0KfepcKVyNwlWwaU1VcU.jpg?scale-down-to=512);
+}
+/* ___________________________ popular images ___________________________ */
+.ppr-1{
+    background-image: url(https://framerusercontent.com/images/zbj8zGUDaT0cKg20i4HrsYDseg.jpg?scale-down-to=512);
+}
+.ppr-2{
+    background-image: url(https://framerusercontent.com/images/kFjL2fByy5EctQCe1UvFJVMSA4.jpg?scale-down-to=512);
+}
+.ppr-3{
+    background-image: url(https://framerusercontent.com/images/vunQlerFcKORMeO0EziJvgiUkc8.jpg?scale-down-to=512);
+}
+.ppr-4{
+    background-image: url(https://framerusercontent.com/images/HtuTEvspluy4W7y19mKeavUVeWQ.jpg?scale-down-to=512);
+}
+.ppr-5{
+    background-image: url(https://framerusercontent.com/images/8ipPtDijSwshm3zxl7ssiDWQI4.jpg?scale-down-to=512);
+}
+.ppr-6{
+    background-image: url(https://framerusercontent.com/images/PbhSCZRwt4x4HnwvwKgdQCwgk.jpg?scale-down-to=512);
+}
+.ppr-7{
+    background-image: url(https://framerusercontent.com/images/TNqB6CPNe41SHCY98BIcePqiQ.jpg?scale-down-to=512);
+}
+.ppr-8{
+    background-image: url(https://framerusercontent.com/images/W2Q0h5bmaeJNb1rbN2auP7k4e4.jpg?scale-down-to=512);
+}
+.ppr-9{
+    background-image: url(https://framerusercontent.com/images/YbmY2gfl2eAdsQXKhXGN5o0FbOQ.jpg?scale-down-to=512);
+}
+/* ___________________________ coming soon images ___________________________ */
+.cs-1{
+    background-image: url(https://framerusercontent.com/images/q5ITDrZRihbkNiwCQvKO9JdJrM.jpg);
+}
+.cs-2{
+    background-image: url(https://framerusercontent.com/images/mk2P5CUdplOrcAwiMdVNPkPNKU.jpg?scale-down-to=512);
+}
+.cs-3{
+    background-image: url(https://framerusercontent.com/images/RaoMrQEmziuQedLLRzJXLdEuA8.jpg?scale-down-to=512);
+}
+.cs-4{
+    background-image: url(https://framerusercontent.com/images/8iAT2G1zYiysJt2h9RiAKjejOvo.jpg?scale-down-to=512);
+}
+.cs-5{
+    background-image: url(https://framerusercontent.com/images/X2FPWY89eB6mLKoAXoC3sXDhNFI.jpg?scale-down-to=512);
+}
+.cs-6{
+    background-image: url(https://framerusercontent.com/images/2ccXKnq7bDwL5RWd3BoSWdA2jno.jpg?scale-down-to=512);
+}
+.cs-7{
+    background-image: url(https://framerusercontent.com/images/qvAmOdD2u3MKbSMkwbSMp6INW6M.jpg?scale-down-to=512);
+}
+.cs-8{
+    background-image: url(https://framerusercontent.com/images/r6pgb4XX1nv40UV6wHbSJQpG1s.jpg?scale-down-to=512);
+}
+.cs-9{
+    background-image: url(https://framerusercontent.com/images/GXiWkzzx1Dqb3AK6f8e290PTcEM.jpg?scale-down-to=512);
+}
+/* ___________________________ @media ___________________________ */
 @media screen and (min-width: 100px) {
     .main-home-container{
         justify-content: center;
@@ -345,5 +550,16 @@ strong{
     }
     .extra-content-home{
         display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .header-movies{
+        flex-direction: column-reverse;
+    }
+    .main-movies-data{
+        width: 80%;
+    }
+    .title-main-movies{
+        font-size: 1.4rem;
     }
 }
